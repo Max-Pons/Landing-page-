@@ -1,5 +1,7 @@
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+/*     border: 5px black solid; */
+    
 }
 
 .head {
@@ -38,35 +40,42 @@ body {
 .bottom-head {
     display: flex;
     padding: 8px 170px;
-    align-items: flex-end;
+    align-items: center;
+
     
     margin-top: 60px;
     gap: 90px;
- /*    border: 5px black solid; */
-}
+/*       border: 5px black solid; */
+ }
 
 
 
 .left-section {
     flex: 1;
-    border: 0px black solid;
+  /*   border: 5px black solid; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+
    
 }
-.left-section p button {
-    flex: 1;
+.titere {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.img {
+
+
+/* .img {
     flex: 2;
     color: rgb(138, 43, 226, 0.8);
     width: auto;
     height: 350px;
     background-color: #e5e7eb;
     border-radius: 16px;
-}
+} */
 
 .titere {
     font-size: 48px;
@@ -85,6 +94,8 @@ button {
 .content1 h2 {
     display: flex;
     justify-content: center;
+    margin-top: 230px ;
+    color: black
 }
 
 .content11 {
@@ -93,7 +104,8 @@ button {
     height: 300px;
     align-items: center;
     justify-content: center;
-    margin: 80px 0px;
+    margin: 0;
+    color: black
 }
 #album {
     display: flex;
@@ -121,7 +133,7 @@ button {
     display: flex;
     flex-direction: column;
     padding: 8px 170px;
-    background-color: #e5e7eb;
+    background-color: #1156e29c;
     margin: 80px 0px;
 }
 
@@ -174,4 +186,33 @@ button {
     color: #efefef;
     background-color: #1f2937;
     padding: 8px 170px;
+}
+
+.right-section {
+    width: 500px;
+    height: 250px;
+    background-color: rgba(153, 153, 165, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*     border: 5px black solid; */
+}
+
+.blue-box button:hover {
+    background-color: #e5e7eb;
+    border: 0px;
+    border-radius: 8px;
+    color: #3882f6;
+    padding: 8px 16px;
+    width: 120px;
+}
+
+
+.left-section button:hover {
+    background-color: #dde1e7;
+    border: 0px;
+    border-radius: 8px;
+    color: #1f2937;
+    padding: 8px 16px;
+    width: 120px;
 }
