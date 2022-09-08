@@ -2,91 +2,113 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Landin Page</title>
+    <title>Max Pons</title>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/pix.png">
 </head>
 <body>
-    <div class="card">
-        <div class="head">
-            <header> 
-                <h2><img src="pix.png"></h2>
-                <ul>
-                    <li><a href="#">menu</a></li>
-    
-                    <li><a href="#">about</a></li>
-    
-                    <li><a href="#">sign-up</a></li>
-                </ul>
-            </header>
-            <div class="bottom-head">
-                <div class="left-section">
-                    <p class="titere">This website is awesome</p>
-                    <p>This website has some subtext that goes here under the main title. Its a smaller font and the color is lower contrast</p>
-                    <button>Sign up</button>
+            <div id="headBody">
+                <div id="head" class="children"> 
+                    <div id="logo">
+                        <img src="img/pix.png">
+                        <h2>Max Pons</h2>
+                    </div>
+                    <div id="headSpacer"></div>
+                    <ul>
+                        <li><a href="#container">about</a></li>
+                        <li><a href="#imgContainer">projects</a></li>
+                        <li><a href="#footMiddle">contact</a></li>
+                    </ul>
                 </div>
-                
-<div class="right-section">
- 
-  <p>this is a place holder for an image</p>
+                <div id="lowHead" class="children">
+                    <div id="lowLeft">
+                        <div id="container">
+                            <h2>Welcome!</h2>
+                            <p>I'm a 23 year old, passionate web developer, from Mexico. 
+                            I am currently  studying <a href="https://www.theodinproject.com/" style="text-decoration: none; color: black;"><strong>"The Odin Project"</strong></a> 
+                            curriculum. All the projects that you'll find
+                            in this portfolio (so far...) are projects from 
+                            the <strong>Foundations</strong> part of <strong>TOP</strong> curriculum.
 
-</div>            
-        </div>
+                            My current goal is to finish the  <strong>Full Stack Javascript</strong> 
+                            course, develop personal project ideas and become
+                            employable to participate in <strong>challenging & exciting projects!</strong>
+                            </p>
+                            <button><a href="#imgContainer" style="text-decoration: none; color: #1b052c;">projects</a></button>
+                        </div>
+                    </div>
+                    <div id="lowRight">
+                        <p>this is a place holder for an image</p>
+                    </div>
+                </div>      
 
-        <div class="content1">
-            <h2>Some random information</h2>
-        </div>
-        <div class="content11">
-                <div id="album">
-                    
-                        <img src="pix.png" alt="Beautiful image">
-                    
-                    <div class="text">
-                        <p>This is some subtext under an illustration image</p>
+            </div>      
+
+            <div id="middleBody">
+                <div id="topMiddle" class="children">
+                    <div id= "imgHead">
+                        <h2>My projects</h2>
+                    </div>
+                    <div id="imgContainer">
+                        <div class="portraits">
+                            <a href="https://max-pons.github.io/Calculator/"><img class= "projectPic" src="img/Calculator2.png" alt="Beautiful image"></a>
+                            <p><strong>Basic Calculator</strong></p>
+                        </div>
+                        <div class="portraits">
+                            <a href="https://max-pons.github.io/Rock-Paper-Scissors/"><img class= "projectPic" src="img/WEFA.png" alt="Beautiful image"> </a>            
+                            <p><strong>Rock-Paper-Scissors</strong></p>
+                        </div>
+                    </div>
+                    <div id="imgContainer2">
+                        <div class="portraits">
+                            <a href="https://max-pons.github.io/etch-sketch/"><img class= "projectPic" src="img/etch-a-sketch.png" alt="Beautiful image"></a>
+                            <p><strong>Etch-a-Sketch</strong></p>
+                        </div>
+                        <div class="portraits">
+                            <a href="https://max-pons.github.io/odin-recipes/"><img class= "projectPic" src="img/curryRice.png" alt="Beautiful image"></a>
+                            <p><strong>Recipes Page</strong></p>
+                        </div>
                     </div>
                 </div>
-                <div id="album">
-                    
-                        <img src="pix.png" alt="Beautiful image">
-                    
-                    <div class="text">
-                        <p>This is some subtext under an illustration image</p>
+
+                <div id="bellyMiddle" class="children">
+                    <div id="hiBelly">
+                        <h2>Tools that I use (ever learning)</h2>
+                    </div>
+                    <div id="lowBelly">
+                        <img class= "projectPic" src="img/javascript.png" alt="javascript">
+                        <img class= "projectPic" src="img/html.png" alt="html">
+                        <img class= "projectPic" src="img/css.png" alt="css">
+                        <img class= "projectPic" src="img/github.png" alt="github">
+                        <img class= "projectPic" src="img/git.png" alt="git">
                     </div>
                 </div>
-                <div id="album">
-                    
-                        <img src="pix.png" alt="Beautiful image">
-                    
-                    <div class="text">
-                        <p>This is some subtext under an illustration image</p>
-                    </div>
+
+                <div id="footMiddle" class="children">
+                    <p><strong>Contact me</strong></p>
+                    <form>
+                        <label for="name"><strong>Name</strong></label>
+                        <br>
+                        <input type="text" name="name" placeholder="Type your name..." class="formBox">
+                        <br>
+                        <label for="email"><strong>Email</strong></label>
+                        <br>
+                        <input type="text" name="email" placeholder="Type your email..." class="formBox">
+                        <br>
+                        <label for="message"><strong>Message</strong></label>
+                        <br>
+                        <textarea rows="5" cols="35" class="formBox" id="message" name="message" placeholder="I'm Mr. placeholder, look at me!"></textarea>
+                        <br>
+                        <input id="input" type="submit">
+                    </form>
+
                 </div>
-                <div id="album">
-                    
-                        <img src="pix.png" alt="Beautiful image">
-                    
-                    <div class="text">
-                        <p>This is some subtext under an illustration image</p>
-                    </div>
-                </div>
-                   
-                
-        </div>
-        <div class="content2">
-            <p class="quote"> <em>"Yo sé de una región cerril cuyos bibliotecarios repudian la supersticiosa y vana costumbre de buscar sentido en los libros y la equiparan a la de buscarlo en los sueños o en las líneas caóticas de la mano… Admiten que los inventores de la escritura imitaron los veinticinco símbolos naturales, pero sostienen que esa aplicación es casual y que los libros nada significan en sí. Ese dictamen, ya veremos no es del todo falaz"</em></p>
-            <p class="author"><strong>-Jorge Luis Borges</strong></p>
-        </div>
-        <div class="content3">
-            <div class="blue-box">
-                <div class="trans-box">
-                    <p class="call"><strong>Call to action! Its time!</strong></p>
-                    <p>Sign up for our product by clicking that button right over there!</p>
-                </div>
-                <button class="button2">Sign up</button>
             </div>
-        </div>
-        <div class= "footer">
-            <p>Web-page designed by: Max Pons</p>
-        </div>
-    </div>
+            
+            <div id="foot">
+                <p>Web-page designed by: Max Pons</p>
+            </div>
 </body>
 </html>
+
