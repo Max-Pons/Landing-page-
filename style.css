@@ -107,6 +107,7 @@ body::-webkit-scrollbar {
     padding: 0%;
     padding-right: 50px;
     margin-top: 40px;
+    font-size: 30px;
 }
 
 #head ul li a{
@@ -122,6 +123,8 @@ body::-webkit-scrollbar {
 #headBody #lowHead {
     display: flex;
     background-color: #1b052c;
+    align-items: center;
+    justify-content: center;
     margin: 0%;
     padding: 0%;
     padding-top: 200px;
@@ -141,8 +144,117 @@ body::-webkit-scrollbar {
     padding-left: 100px;
     padding-right: 100px;
     color: #efefef;
+    font-size: 25px;
 /*     box-shadow: inset 0px 0px 300px #efefef;
  */}
+
+
+ #lowHead #lowRight {
+    overflow: hidden;
+    height: 400px;
+ }
+
+ #lowHead #block,
+ #lowHead #block2,
+ #lowHead #block3 {
+    position: relative;
+    top: -1700px;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px #efefef;
+}
+
+#lowHead #block4,
+#lowHead #block5,
+#lowHead #block6 {
+    position: relative;
+    top: 1710px;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px #efefef;
+}
+
+#lowHead #block {
+    left: -240px;
+    background-color: rgb(255, 0, 64);
+    animation: animo 4s infinite linear;
+}
+
+#lowHead #block4 {
+    left: -140px;
+    background-color: rgb(0, 162, 255);
+    animation: anima 4s infinite linear;
+}
+
+#lowHead #block2 {
+    left: -40px;
+    background-color: rgb(238, 255, 0);
+    animation: animo2 5s infinite linear;
+}
+
+#lowHead #block5 {
+    left: 60px;
+    background-color: rgb(204, 0, 255);
+    animation: anima 5s infinite linear;
+}
+
+#lowHead #block3 {
+    left: 160px;
+    background-color: rgb(0, 255, 76);
+    animation: animo3 6s infinite linear;
+}
+
+#lowHead #block6 {
+    left: 260px;
+    background-color: chocolate;
+    animation: anima 6s infinite linear;
+}
+
+@keyframes animo{
+    0% {top: -700}
+    50% {top: 710px}
+    100% {top: -700px}
+    
+}
+
+@keyframes animo2{
+    0% {top: -700}
+    50% {top: 710px}
+    100% {top: -700px}
+    
+}
+
+@keyframes animo3{
+    0% {top: -700}
+    50% {top: 710px}
+    100% {top: -700px}
+    
+}
+
+
+
+@keyframes anima{
+    0% {top: 710px}
+    50% {top: -700px}
+    100% {top: 710px}
+    
+}
+
+@keyframes anima2{
+    0% {top: 710px}
+    50% {top: -700px}
+    100% {top: 710px}
+    
+}
+
+@keyframes anima3{
+    0% {top: 710px}
+    50% {top: -700px}
+    100% {top: 710px}
+    
+}
 
  #container button {
     color: #1b052c;
@@ -150,8 +262,10 @@ body::-webkit-scrollbar {
     border: 0;
     border-radius: 8px;
     padding-top: 3px;
-    padding-bottom: 3px
- }
+    padding-bottom: 3px;    
+    font-size: 25px;
+
+}
 
  #container button:hover {
     color: #efefef;
@@ -226,7 +340,7 @@ body::-webkit-scrollbar {
 #bellyMiddle #hiBelly {
     flex: 1;
     color: #efefef;
-    background-color:#896aa0;
+    background-color:#1b052c;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -287,8 +401,8 @@ body::-webkit-scrollbar {
 }
 
 .projectPic {
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
     border-radius: 20px;
 }
 
